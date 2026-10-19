@@ -9,53 +9,65 @@
 <style>
 :root{--bg:#f6f5ee;--paper:#fffef9;--ink:#203f35;--muted:#59685f;--line:#d9dfd3;--green:#285c42;--lime:#dceba6;--orange:#ad4a26;--soft:#f9eee3;--radius:24px}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif}button,input,textarea{font:inherit}button,a,input,textarea{touch-action:manipulation}button{cursor:pointer}button:disabled{cursor:wait;opacity:.55}a{color:var(--green);text-underline-offset:4px}button:focus-visible,a:focus-visible,summary:focus-visible,input:focus-visible,textarea:focus-visible{outline:3px solid #b05d28;outline-offset:4px}[hidden]{display:none!important}.wrap{max-width:1180px;margin:auto;padding:0 28px}header{border-bottom:1px solid var(--line)}nav{display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:90px}.brand{font-weight:800;font-size:23px;text-decoration:none;letter-spacing:-1px;display:flex;align-items:center;gap:10px}.brand i{font-style:normal;display:grid;place-items:center;background:var(--green);color:var(--lime);width:37px;height:37px;border-radius:12px;font-size:26px}.nav-links{display:flex;align-items:center;gap:24px;font-size:14px}.pill{display:inline-block;padding:5px 11px;border:1px solid var(--line);border-radius:30px;font-size:12px;letter-spacing:.02em;background:#ffffff65}.hero{padding:58px 0 36px;display:grid;grid-template-columns:1.4fr .8fr;gap:35px;align-items:center}.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.14em;font-weight:750}h1{font-size:clamp(38px,5.2vw,64px);line-height:1.07;letter-spacing:-2.7px;margin:18px 0 22px;font-weight:750}h1 em{font-style:normal;color:#557d42}.lead{font-size:18px;color:var(--muted);max-width:630px;margin:0}.hero-art{height:260px;position:relative;background:#e6eadb;border-radius:46% 54% 42% 58%;display:grid;place-items:center;overflow:hidden}.pack{width:145px;height:185px;background:var(--paper);border:2px solid #c8d2bc;border-radius:14px;transform:rotate(-12deg);box-shadow:12px 18px 0 #c6d1b6;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px}.pack .leaf{font-size:46px;color:var(--green)}.pack strong{font-size:12px;letter-spacing:3px}.pack .lines{width:72px;height:26px;background:repeating-linear-gradient(0deg,#aab8a0 0 2px,transparent 2px 7px)}.art-label{position:absolute;background:var(--lime);border:1px solid #b8c88f;padding:9px 17px;border-radius:14px;right:8px;bottom:34px;transform:rotate(5deg);font-size:13px;font-weight:700}.steps{display:flex;gap:24px;margin:0 0 28px;flex-wrap:wrap;font-size:13px;color:var(--muted)}.steps b{display:inline-grid;place-items:center;width:24px;height:24px;background:#e6ebdf;border-radius:50%;margin-right:7px;color:var(--ink)}.workspace{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:start}.panel{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius);padding:28px}.panel-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:18px}h2{font-size:22px;letter-spacing:-.6px;line-height:1.25;margin:0}h3{font-size:17px;margin:0 0 8px}.num{font-size:12px;color:var(--muted);font-weight:650}.drop{border:1.5px dashed #98aa8c;border-radius:18px;padding:24px 18px;text-align:center;background:#f5f7ee}.drop.drag{background:#e8f0d0;border-color:var(--green)}.upload-icon{font-size:34px;line-height:1.1;margin-bottom:8px}.drop strong{font-size:17px}.small{font-size:13px;color:var(--muted)}.drop p{margin:7px 0 16px}.buttons{display:flex;gap:9px;flex-wrap:wrap}.drop .buttons{justify-content:center}.btn{border:1px solid var(--line);background:transparent;color:var(--ink);border-radius:12px;padding:10px 16px;font-size:14px;font-weight:650;min-height:44px}.btn.primary{background:var(--green);border-color:var(--green);color:white}.btn.soft{background:#e9eedb}.btn:hover:not(:disabled){filter:brightness(.95)}.linkbtn{border:0;background:none;color:var(--green);text-decoration:underline;text-underline-offset:4px;padding:7px 0;font-size:13px;min-height:40px}.preview-wrap{margin:16px 0}.preview-wrap img{max-height:240px;max-width:100%;display:block;margin:auto;border-radius:12px}.photo-info{display:flex;gap:8px;align-items:center;justify-content:space-between;margin-top:7px}.photo-info span{overflow-wrap:anywhere}.progress-box{padding:13px;background:#edf1e5;border-radius:12px;margin-top:16px}progress{width:100%;height:9px;accent-color:var(--green)}.progress-line{display:flex;align-items:center;justify-content:space-between;gap:12px;font-size:13px}.status{font-size:13px;padding:12px 14px;border-radius:12px;background:#edf1e5;margin:14px 0;overflow-wrap:anywhere}.status.error{background:#fff0e7;color:#863b22}.editor-head{margin-top:22px;display:flex;align-items:center;justify-content:space-between;gap:10px}label{font-size:14px;font-weight:650}textarea{resize:vertical;width:100%;min-height:205px;padding:14px;border:1px solid #b9c6b2;border-radius:12px;background:#fffefb;color:var(--ink);margin-top:8px;font-size:14px;line-height:1.65}textarea::placeholder{color:#69746b}textarea:disabled{opacity:.6}.editor-foot{display:flex;justify-content:space-between;gap:10px;font-size:12px;color:var(--muted);margin:5px 0 16px}.analyse{width:100%;font-size:16px;padding:13px}.privacy-note{font-size:12px;color:var(--muted);margin:14px 0 0}.empty{padding:35px 9px;text-align:center}.empty-symbol{margin:0 auto 20px;width:82px;height:82px;display:grid;place-items:center;border-radius:50%;background:#edf1e2;font-size:36px}.empty h3{font-size:22px}.empty p{color:var(--muted);max-width:320px;margin:12px auto 20px;font-size:14px}.mini{display:flex;text-align:left;align-items:center;gap:14px;padding:14px 0;border-top:1px solid var(--line);font-size:13px}.mini i{font-style:normal;font-size:21px}.note{background:var(--soft);border:1px solid #e8d7c4;border-radius:14px;padding:13px 15px;font-size:13px;line-height:1.6}.tag{font-size:11px;border-radius:6px;padding:3px 7px;background:#e9eedf;white-space:nowrap}.tag.amber{color:#854020;background:#f9e7d5}.result-section{padding:21px 0;border-bottom:1px solid var(--line)}.result-section:last-child{border:0;padding-bottom:0}.result-section p{font-size:13px;margin:7px 0;color:var(--muted)}.finding{margin-top:10px;padding:12px;background:#f4f5ec;border-radius:12px}.finding-top{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;align-items:center;font-size:14px}.finding blockquote{font-size:12px;margin:7px 0 0;color:var(--muted);overflow-wrap:anywhere}.score-row{display:flex;align-items:center;gap:17px}.score{flex-shrink:0;width:84px;height:84px;display:grid;place-items:center;background:var(--lime);border-radius:22px;font-size:27px;font-weight:750}.score small{font-size:12px;font-weight:400}.score-title{font-size:16px;font-weight:700}.criteria{list-style:none;padding:0;margin:12px 0 0;font-size:13px}.criteria li{display:flex;justify-content:space-between;gap:8px;padding:6px 0}.criteria span{color:var(--muted)}details{font-size:13px}summary{cursor:pointer;color:var(--green);padding:10px 0;font-weight:650}.ingredients{white-space:pre-wrap;overflow-wrap:anywhere;font-size:14px;color:var(--ink);margin:8px 0}.result-tools{display:flex;justify-content:space-between;gap:12px;margin-top:15px}.method{margin:35px 0 45px;padding:28px;background:#e9edde;border-radius:var(--radius)}.method-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:20px}.method h3{font-size:15px}.method p{font-size:13px;color:var(--muted);margin:6px 0}footer{border-top:1px solid var(--line);padding:22px 0 30px;font-size:12px;color:var(--muted)}footer .wrap{display:flex;justify-content:space-between;gap:22px;flex-wrap:wrap}.demo-banner{font-size:12px;padding:8px 12px;background:#eaf0d8;border-radius:9px;margin-bottom:12px}.stale{background:#fff0df;color:#794321}#sourceNote{margin:0 0 12px}#resultBody{overflow-wrap:anywhere}.noscript{padding:20px;background:#ffeadb}@media(max-width:800px){.hero{grid-template-columns:1fr;padding-top:35px}.hero-art{display:none}.workspace{grid-template-columns:1fr}.method-grid{grid-template-columns:1fr;gap:16px}h1{max-width:650px}.nav-links>a{display:none}.steps{gap:12px}.panel{padding:23px}.wrap{padding:0 18px}}@media(max-width:380px){.brand{font-size:20px}.pill{font-size:10px}.panel{padding:18px}h1{font-size:38px}.steps{font-size:12px;gap:8px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 .welcome{border:1px solid var(--line);border-radius:28px;background:var(--paper);color:var(--ink);width:min(540px,calc(100% - 28px));max-height:calc(100dvh - 28px);padding:30px;overflow:auto;box-shadow:0 24px 100px #142e3633}.welcome::backdrop{background:#173d31a8;backdrop-filter:blur(5px)}.welcome-icon{width:64px;height:64px;display:grid;place-items:center;font-size:36px;background:var(--lime);border-radius:20px;margin:22px 0}.welcome h2{font-size:clamp(27px,5vw,35px);letter-spacing:-1px}.welcome h2:focus{outline:none}.welcome p{color:var(--muted);font-size:15px}.welcome-top{display:flex;justify-content:space-between;align-items:center;gap:15px}.welcome-list{list-style:none;padding:0;margin:20px 0}.welcome-list li{padding:12px 0;border-bottom:1px solid var(--line);font-size:14px}.welcome-list strong{display:block;margin-bottom:3px}.welcome-list span{color:var(--muted)}.welcome-actions{display:flex;flex-direction:column;gap:9px;margin-top:23px}.welcome-actions .btn{width:100%}.welcome-dots{display:flex;gap:6px;margin-top:22px}.welcome-dots span{width:23px;height:4px;background:var(--line);border-radius:3px}.welcome-dots span.active{background:var(--green)}.welcome .linkbtn{font-size:12px}.welcome-back{margin-top:12px}@media(max-width:380px){.welcome{padding:22px}}
-</style>
+.profile-form{display:grid;gap:14px;margin-top:20px}.profile-form label{display:grid;gap:5px}.profile-form input,.profile-form select,.package-choice select{width:100%;padding:11px 12px;border:1px solid #b9c6b2;border-radius:12px;background:#fffefb;color:var(--ink);font:inherit;min-width:0}.profile-form .buttons{margin-top:8px}.profile-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:22px;padding:10px 16px;background:#e9edde;border-radius:14px;font-size:13px}.profile-bar span{overflow-wrap:anywhere}.package-choice{padding:15px 0;border-bottom:1px solid var(--line)}.package-choice label{display:block;margin-bottom:8px}.allergen-list{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.allergen-chip{padding:9px 12px;background:#f7eadb;border-radius:12px;font-size:13px}.allergen-chip small{display:block;color:#795330;font-size:11px}.collection-card{padding:15px;background:#edf1e5;border-radius:14px;margin-top:12px}.collection-card h4{margin:0 0 7px}.collection-card p{margin:5px 0}.collection-card a{display:inline-block;margin-right:14px}.result-section h3{margin-bottom:10px}.result-section .verdict{font-size:17px;color:var(--ink);font-weight:700}.profile-error{color:#8c361c;font-size:13px}.note.compact{font-size:12px}.pill{white-space:nowrap}
+
+/* Короткие цветные результаты. Цвет поддерживает подпись и не заменяет ее. */
+.brand i{display:flex;align-items:center;justify-content:center;line-height:0;flex-shrink:0}.brand svg{display:block;flex-shrink:0}.scan-word{font-size:22px;font-weight:800;letter-spacing:4px;color:var(--green)}.upload-mark{color:#527657;margin:4px 0 14px}.num{display:none}.hero{padding-bottom:30px}.hero h1{margin-top:0}.profile-bar{background:#eeefe7}.empty{padding:48px 8px}.empty-bars{display:flex;gap:6px;justify-content:center;align-items:center;height:60px;margin-bottom:20px}.empty-bars span{display:block;width:13px;border-radius:8px;background:#b6c99f;height:32px}.empty-bars span:nth-child(2){height:51px;background:#8cae8c}.empty-bars span:nth-child(3){height:41px;background:#cbd9b5}.result-hint{font-size:12px;color:var(--muted);margin:0 0 16px}.result-section{border:0;border-radius:18px;margin:12px 0;padding:20px!important}.result-section p{color:inherit;font-size:13px}.result-section h3{font-size:18px}.result-allergens{background:#fbe9e4;color:#723a30}.result-packaging{background:#e5eef9;color:#294d72}.result-materials{background:#fff1ce;color:#6e5423}.result-recycling{background:#e5efd9;color:#395b35}.result-location{background:#eee7f7;color:#55416f}.result-section .verdict{font-size:21px;color:inherit;margin:8px 0}.allergen-list{gap:8px}.allergen-chip{background:#fffaf5;border:1px solid #e6c7bd;color:#743a30}.allergen-chip.is-claim{background:#f2f5ee;color:#405a3c;border-color:#cbd6bf}.allergen-chip.is-trace{background:#fff0cc;color:#725325;border-color:#e2c690}.result-section summary{color:inherit}.result-materials .material-item{padding:9px 0;border-bottom:1px solid #e3d2a7;font-size:14px}.result-materials .material-item:last-child{border:0}.result-materials small{display:block}.collection-card{background:#faf6ff;margin-top:12px}.collection-card a.map-link{display:inline-flex;align-items:center;justify-content:center;background:#65527d;color:#fff;text-decoration:none;border-radius:11px;padding:10px 17px;font-size:14px;font-weight:650;min-height:44px;margin-top:10px}.collection-card details{margin-top:8px}.collection-card p{font-size:12px}.result-section .signal-names{font-size:14px;margin-top:10px}.package-choice{border:0;background:#e5eef9;border-radius:16px;padding:14px;margin-top:12px}.package-choice label{color:#294d72}.result-tools .linkbtn{font-size:13px}.method{background:#eeefe7}.method h2{font-size:19px}.method>details{margin-top:4px}.method p{font-size:13px}footer{padding:15px 0}.welcome-list li{padding:10px 0}.welcome h2{margin-top:20px}.welcome-list span{font-size:13px}.welcome-dots{margin-top:15px}@media(max-width:800px){.result-section{padding:17px!important}.hero{padding-top:28px}} 
+.accept-label{display:flex!important;align-items:flex-start;gap:10px;margin:14px 0 0!important;font-size:13px;font-weight:500;cursor:pointer}.accept-label input{width:19px;height:19px;margin:2px 0 0;flex-shrink:0;accent-color:var(--green)}</style>
 </head>
 <body>
 <dialog id="welcome" class="welcome" aria-labelledby="welcomeTitle" aria-describedby="welcomeDescription">
-<div class="welcome-top"><span class="eyebrow">ГринСкан · бета</span><button class="linkbtn" id="welcomeSkip" type="button">Пропустить</button></div>
-<div class="welcome-icon" id="welcomeIcon" aria-hidden="true">❧</div>
+<div class="welcome-top"><span class="eyebrow">GreenScan</span><button class="linkbtn" id="welcomeSkip" type="button">Пропустить</button></div>
+<div id="welcomeIcon" hidden></div>
 <h2 id="welcomeTitle" tabindex="-1">Добро пожаловать<br>в ГринСкан!</h2>
-<p id="welcomeDescription">Поможем внимательнее прочитать состав продукта и разобраться в маркировке упаковки. Начнем с короткого знакомства?</p>
-<ul class="welcome-list" id="welcomeFeatures" hidden>
-<li><strong>Состав и аллергены</strong><span>Распознаем русский и английский текст по фото. Ищем упоминания орехов, сои, злаков / глютена, молока / лактозы, яиц, рыбы, морепродуктов, кунжута, горчицы и сельдерея.</span></li>
-<li><strong>Неочевидные названия</strong><span>Подсветим, например, соевый лецитин, молочную сыворотку, сульфиты и фразы о возможных следах, если они есть в тексте. Скрытые или неуказанные вещества по фото определить нельзя.</span></li>
-<li><strong>Материал упаковки</strong><span>Ищем читаемые обозначения PET, HDPE, PP, бумаги, стекла и металла. Прием зависит от региона и пункта сбора; маркировка сама по себе не гарантирует переработку.</span></li>
-</ul>
-<p id="welcomeCaution" class="note" hidden>Распознавание может ошибаться. Сверяйте текст с этикеткой: разбор не подтверждает безопасность продукта и не заменяет проверку состава.</p>
-<div class="welcome-actions"><button class="btn primary" id="welcomeNext" type="button">Что умеет ГринСкан →</button><button class="btn" id="welcomeCamera" type="button" hidden>Снять фото</button><button class="btn" id="welcomeManual" type="button" hidden>Ввести текст вручную</button></div>
+<p id="welcomeDescription">Сфотографируйте упаковку — мы разберемся в надписях.</p>
+<ul class="welcome-list" id="welcomeFeatures" hidden><li><strong>Аллергены</strong><span>Названия ингредиентов и возможные следы.</span></li><li><strong>Упаковка</strong><span>Материал и условия переработки.</span></li><li><strong>Пункты приема</strong><span>Адреса и карта для вашего региона.</span></li></ul>
+<p id="welcomeCaution" class="note" hidden>Распознавание может ошибаться.</p>
+<div class="welcome-actions"><button class="btn primary" id="welcomeNext" type="button">Что умеет ГринСкан →</button><button class="btn" id="welcomeCamera" type="button" hidden>Снять фото</button><button class="btn" id="welcomeManual" type="button" hidden>Попробовать пример</button></div>
 <button class="linkbtn welcome-back" id="welcomeBack" type="button" hidden>← Назад</button>
 <div class="welcome-dots" aria-hidden="true"><span id="welcomeDot0" class="active"></span><span id="welcomeDot1"></span><span id="welcomeDot2"></span></div>
 </dialog>
-<header><nav class="wrap" aria-label="Основная навигация"><a class="brand" href="#"><i aria-hidden="true">↗</i> ГринСкан</a><div class="nav-links"><a href="#method">Как это работает</a><span class="pill">Бесплатно · без регистрации</span></div></nav></header>
+<dialog id="profileDialog" class="welcome" aria-labelledby="profileTitle">
+<div class="eyebrow">GreenScan · профиль</div><h2 id="profileTitle">Давайте познакомимся</h2>
+<p>Регион нужен для пунктов приема.</p>
+<form id="profileForm" class="profile-form">
+<label>Как вас зовут<input id="profileName" autocomplete="given-name" maxlength="50" required placeholder="Ваше имя"></label>
+<label>Возраст <span class="small">Можно оставить пустым</span><input id="profileAge" type="number" min="1" max="120" step="1" inputmode="numeric" placeholder="Полных лет"></label>
+<label>Пол<select id="profileGender"><option value="unspecified">Не указывать</option><option value="male">Мужской</option><option value="female">Женский</option></select></label>
+<label>Город или регион<input id="profileRegion" list="regionList" autocomplete="address-level1" maxlength="100" required placeholder="Например, Томск"><datalist id="regionList"><option value="Томск"><option value="Томский район"><option value="Томская область"></datalist></label>
+<details><summary>О хранении профиля</summary><p class="small">Профиль хранится в этом браузере. На общем устройстве его могут увидеть другие пользователи.</p></details>
+<p id="profileError" class="profile-error" role="status" hidden></p>
+<button class="btn primary" type="submit">Сохранить и продолжить</button>
+<div class="buttons"><button class="linkbtn" type="button" id="profileClose">Позже</button><button class="linkbtn" type="button" id="profileDelete" hidden>Удалить профиль</button></div>
+</form></dialog>
+<header><nav class="wrap" aria-label="Основная навигация"><a class="brand" href="#"><i aria-hidden="true"><svg width="21" height="21" viewBox="0 0 24 24" fill="none"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="2.7" stroke-linecap="round" stroke-linejoin="round"/></svg></i> GreenScan</a><div class="nav-links"><a href="#method">Как это работает</a><span class="pill">Бесплатно · без пароля</span></div></nav></header>
 <main class="wrap">
-<section class="hero"><div><div class="eyebrow">Меньше догадок. Больше ясности.</div><h1>Что на самом деле<br>написано <em>на упаковке?</em></h1><p class="lead">Сфотографируйте этикетку, проверьте текст и найдите упоминания аллергенов и материалов упаковки.</p></div><div class="hero-art" aria-hidden="true"><div class="pack"><span class="leaf">❧</span><strong>СОСТАВ</strong><div class="lines"></div><span>↻ PAP 21</span></div><span class="art-label">Читаем между строк ↗</span></div></section>
-<div class="steps" aria-label="Три шага"><span><b>1</b>Добавьте фото</span><span><b>2</b>Проверьте текст</span><span><b>3</b>Изучите разбор</span></div>
+<section class="hero"><div><h1>Что на самом деле<br>написано <em>на упаковке?</em></h1><p class="lead">Состав. Упаковка. Куда сдать. По одному фото.</p></div><div class="hero-art" aria-hidden="true"><div class="pack"><span class="scan-word">SCAN</span><strong>СОСТАВ</strong><div class="lines"></div><span>↻ PAP 21</span></div></div></section>
+
 <noscript><p class="noscript">Для распознавания и анализа включите JavaScript в браузере. Никакой установки и ключей API не требуется.</p></noscript>
+<div class="profile-bar"><span id="profileSummary">Выберите регион</span><button class="linkbtn" id="editProfile" type="button">Мой профиль</button></div>
 <div class="workspace">
 <section class="panel" aria-labelledby="inputTitle"><div class="panel-top"><h2 id="inputTitle">Ваша этикетка</h2><span class="num">01 / ИСТОЧНИК</span></div>
-<div class="drop" id="drop"><div class="upload-icon" aria-hidden="true">▧</div><strong>Добавьте четкое фото</strong><p class="small">Состав и маркировка крупным планом.<br>JPG, PNG, WebP · до 15 МБ</p><div class="buttons"><button class="btn primary" id="choose" type="button">Выбрать фото</button><button class="btn" id="shoot" type="button">Снять фото</button></div><p class="small" style="margin-bottom:0">Или перетащите файл сюда</p></div>
+<div class="drop" id="drop"><div class="upload-mark" aria-hidden="true"><svg viewBox="0 0 32 32" width="34" height="34" fill="none"><rect x="4" y="5" width="24" height="22" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="m5 23 7-8 6 7 4-4 5 5" stroke="currentColor" stroke-width="1.5"/><circle cx="22" cy="11" r="2" fill="currentColor"/></svg></div><strong>Добавьте четкое фото</strong><p class="small">JPG, PNG, WebP · до 15 МБ</p><div class="buttons"><button class="btn primary" id="choose" type="button">Выбрать фото</button><button class="btn" id="shoot" type="button">Снять фото</button></div><p class="small" style="margin-bottom:0">Или перетащите файл сюда</p></div>
 <input id="file" type="file" accept="image/jpeg,image/png,image/webp" hidden><input id="camera" type="file" accept="image/*" capture="environment" hidden>
-<div class="preview-wrap" id="previewWrap" hidden><img id="preview" alt="Выбранная этикетка для распознавания"><div class="photo-info small"><span id="photoName"></span><button type="button" class="linkbtn" id="rotate">Повернуть ↻</button></div><button type="button" id="ocr" class="btn soft" style="width:100%">Распознать RU + EN</button></div>
+<div class="preview-wrap" id="previewWrap" hidden><img id="preview" alt="Выбранная этикетка для распознавания"><div class="photo-info small"><span id="photoName"></span><button type="button" class="linkbtn" id="rotate">Повернуть ↻</button></div><button type="button" id="ocr" class="btn soft" style="width:100%">Повторить распознавание</button></div>
 <div id="progressBox" class="progress-box" hidden><div class="progress-line"><span id="progressText" role="status">Подготовка…</span><button class="linkbtn" id="cancel" type="button">Отменить</button></div><progress id="progress" max="100" value="0" aria-label="Прогресс распознавания"></progress></div>
 <div id="status" class="status" role="status" aria-live="polite" hidden></div>
-<div class="editor-head"><label for="text">Текст упаковки</label><button class="linkbtn" id="demo" type="button">Попробовать пример ↗</button></div>
-<textarea id="text" maxlength="20000" spellcheck="false" placeholder="Распознанный текст появится здесь. Можно сразу вставить или набрать состав и маркировку вручную."></textarea>
-<div class="editor-foot"><span>Исправьте ошибки перед анализом</span><span id="count">0 / 20 000</span></div>
-<button class="btn primary analyse" id="analyse" type="button">Разобрать этикетку <span aria-hidden="true">↗</span></button>
+<div class="editor-head"><span></span><button class="linkbtn" id="demo" type="button">Попробовать пример ↗</button></div>
+<textarea id="text" maxlength="20000" readonly hidden aria-hidden="true"></textarea><span id="count" hidden></span><button id="analyse" hidden type="button">Разобрать этикетку</button>
 <button class="linkbtn" id="clear" type="button">Очистить всё</button>
-<p class="privacy-note">◌ Фото и текст обрабатываются на этом устройстве. Мы не отправляем их на сервер. <a href="#privacy">О конфиденциальности</a></p>
+
 </section>
 <section class="panel" aria-labelledby="resultTitle"><div class="panel-top"><h2 id="resultTitle" tabindex="-1">Разбор этикетки</h2><span class="num">02 / РЕЗУЛЬТАТ</span></div>
-<div id="empty" class="empty"><div class="empty-symbol" aria-hidden="true">⌕</div><h3>Начнем с упаковки</h3><p>Добавьте фото или текст. Здесь появится разбор с цитатами и объяснением каждого балла.</p><div class="mini"><i aria-hidden="true">◎</i><span>Упоминания аллергенов и контекст фраз</span></div><div class="mini"><i aria-hidden="true">↻</i><span>Материалы и подсказки по маркировке</span></div><div class="mini"><i aria-hidden="true">≡</i><span>Прозрачная оценка полноты текста</span></div></div>
-<div id="results" hidden><p id="sourceNote" class="small"></p><div id="demoBanner" class="demo-banner" hidden>ДЕМО · Вымышленная этикетка, не реальный товар.</div><div id="stale" class="status stale" role="status" hidden>Текст изменен. Нажмите «Разобрать этикетку», чтобы обновить результат.</div><div class="note"><strong>Сверьте с оригинальной упаковкой.</strong> Это поиск слов, а не проверка безопасности. Пропуск слова не означает отсутствие аллергена. При пищевой аллергии не принимайте решение только по этому разбору.</div><div id="resultBody"></div><div class="result-tools"><button class="linkbtn" id="download" type="button">Скачать разбор .txt</button></div></div>
+<div id="empty" class="empty"><div class="empty-bars" aria-hidden="true"><span></span><span></span><span></span></div><h3>Здесь будет результат</h3><p>Загрузите фото упаковки</p></div>
+<div id="results" hidden><p id="sourceNote" class="small" hidden></p><div id="demoBanner" class="demo-banner" hidden>ДЕМО · Вымышленная этикетка, не реальный товар.</div><div id="stale" class="status stale" role="status" hidden>Текст изменен. Нажмите «Разобрать этикетку», чтобы обновить результат.</div><p class="result-hint">Распознавание может ошибаться.</p><div id="resultBody"></div><div class="package-choice"><label for="packageKind">Тип упаковки</label><select id="packageKind"><option value="auto">По данным этикетки</option><option value="bottle">Пластиковая бутылка</option><option value="carton">Коробка для напитка, многослойная</option><option value="cup">Бумажный стаканчик</option><option value="film">Пакет или пленка</option><option value="paper">Бумага или картон</option><option value="glass">Стеклянная тара</option><option value="metal">Металлическая банка</option><option value="other">Не знаю / другое</option></select><label class="accept-label"><input id="acceptedPackaging" type="checkbox"><span>Мой пункт принимает такую упаковку</span></label></div><div id="collectionBody"></div><div class="result-tools"><button class="linkbtn" id="download" type="button">Скачать разбор .txt</button></div></div>
 </section>
 </div>
-<section id="method" class="method"><h2>Честно о возможностях</h2><div class="method-grid"><div><h3>01 / Читаем текст</h3><p>Tesseract.js распознает русский и английский текст локально. Блики, мелкий шрифт и изгибы упаковки дают ошибки. Снимайте ровно, при хорошем свете; при необходимости поверните фото.</p></div><div><h3>02 / Ищем слова</h3><p>Открытый словарь ищет 14 групп аллергенов, ингредиенты и отдельные предупреждения. Это не AI-экспертиза, не полный справочник и не медицинская рекомендация. Количество вещества и исключения не определяются.</p></div><div><h3>03 / Объясняем результат</h3><p>Баллы отражают только наличие разделов в введенном тексте. Маркировка материала не доказывает прием упаковки на переработку. Репутацию, экологичность и сертификацию брендов мы не оцениваем.</p></div></div>
-<details><summary>Как считаются баллы и что означают материалы</summary><p>Полнота текста: непустой раздел «Состав / Ingredients» — 40 баллов; распознанное обозначение материала — 30; слова об условиях хранения — 15; слова о сроке годности — 15. Всего 100. Каждый пункт начисляется один раз. Наличие заголовка не подтверждает полноту или достоверность сведений. Отсутствие раздела на фото не означает, что его нет на упаковке. Баллы не показывают пользу, вред, экологичность или качество товара.</p><p>Справочник материалов: PET/PETE 1, HDPE/PE-HD 2, PVC 3, LDPE/PE-LD 4, PP 5, PS 6, OTHER/O 7; PAP 20–22, FE 40, ALU 41, GL 70–72, C/PAP — композит на основе бумаги. Одиночные цифры без обозначения материала игнорируются. Знаки на фото как рисунки отдельно не распознаются. Ошибочные и конфликтующие пары (например, PET 5) требуют ручной проверки.</p><p>Справочные источники: <a href="https://github.com/naptha/tesseract.js" target="_blank" rel="noopener noreferrer">Tesseract.js</a> и <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31997D0129" target="_blank" rel="noopener noreferrer">система обозначений материалов упаковки</a>. Подробные правила поиска доступны в исходном коде этого HTML-файла.</p></details>
-<details id="privacy"><summary>Конфиденциальность и работа без интернета</summary><p>Нет аккаунтов, аналитики, рекламных скриптов, ключей API и облачного анализа. Фото, введенный текст и результаты остаются в памяти вкладки; приложение не записывает их в localStorage или базу данных. В localStorage сохраняется только отметка о пройденном приветствии, чтобы не показывать его при каждом открытии в этом браузере. Если хранилище недоступно или очищено, приветствие появится снова. «Очистить всё» удаляет фото, текст и результат из интерфейса и памяти приложения. При обновлении страницы они теряются. Скачанный вами отчет остается в загрузках.</p><p>Только после нажатия «Распознать» браузер загружает Tesseract.js 6.0.1, движок и модели rus + eng с cdn.jsdelivr.net. CDN видит технические данные запроса, включая IP, но приложение не отправляет туда фото или текст. Браузер может кэшировать библиотеку; кэш языковых моделей в приложении отключен. Хостинг сайта также видит обычные запросы страницы. Любой сторонний код — доверенная зависимость, абсолютной гарантии приватности нет.</p><p>Без интернета работают ручной ввод, разбор текста, пример и скачивание отчета. Первое OCR требует интернета и может загружаться несколько минут. На слабом устройстве используйте ручной ввод. Лучше открывать через HTTPS на GitHub Pages: при открытии HTML двойным щелчком браузер может блокировать OCR.</p></details>
+<section id="method" class="method"><h2>Честно о возможностях</h2><details><summary>Как работает разбор</summary><p>Распознаем текст фото, ищем аллергены, названия ингредиентов и маркировку упаковки. Невидимые слои и вещества по фото не определяются. Форма по модели — только предварительная подсказка. При аллергии проверяйте полный состав на упаковке.</p></details>
+<details><summary>На чем основан разбор</summary><p>Словарь ищет упоминания аллергенов, а справочник — буквенные обозначения материалов PET/PETE, HDPE, LDPE, PVC, PP, PS, OTHER, PAP, FE, ALU, GL, C/PAP. Одиночные цифры игнорируются. По названию продукта и составу еды материал упаковки не угадывается. Форма предварительно определяется локальной моделью MobileViT: бутылка, коробка, чашка или банка. Материал и покрытия по форме не устанавливаются. Экознаки отмечаются по читаемым названиям, без проверки подлинности.</p><p>Многослойная упаковка и стаканчики с покрытием могут требовать отдельного потока приема. Нужен подходящий оператор; это не доказательство гринвошинга. Список адресов не подтверждает, что пункт принимает вашу конкретную упаковку. Часы работы и ограничения проверяйте перед поездкой.</p><p>Источники: <a href="https://github.com/naptha/tesseract.js" target="_blank" rel="noopener noreferrer">Tesseract.js</a>, <a href="https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:31997D0129" target="_blank" rel="noopener noreferrer">обозначения материалов</a>, <a href="https://www.tetrapak.com/en-gb/sustainability/focus-areas/circularity/choose-cartons" target="_blank" rel="noopener noreferrer">условия переработки картонной упаковки для напитков</a>, <a href="https://huggingface.co/Xenova/mobilevit-xx-small" target="_blank" rel="noopener noreferrer">модель формы MobileViT</a>, <a href="https://www.fda.gov/food/nutrition-food-labeling-and-critical-foods/food-allergies" target="_blank" rel="noopener noreferrer">названия пищевых аллергенов</a>, <a href="https://www.nhs.uk/conditions/lactose-intolerance/" target="_blank" rel="noopener noreferrer">лактоза и пищевая непереносимость</a>.</p></details>
+<details id="privacy"><summary>Конфиденциальность и работа без интернета</summary><p>Нет аккаунтов, аналитики, рекламных скриптов, ключей API и облачного анализа. Фото, введенный текст и результаты остаются в памяти вкладки; приложение не записывает их в localStorage или базу данных. В localStorage сохраняются отметка о пройденном приветствии и введенный профиль (имя, возраст, пол, регион). Профиль можно изменить или удалить кнопкой «Мой профиль». При удалении фотографии и текст отчета не сохраняются и никому не отправляются. Если хранилище недоступно или очищено, приветствие появится снова. «Очистить всё» удаляет фото, текст и результат из интерфейса и памяти приложения. При обновлении страницы они теряются. Скачанный вами отчет остается в загрузках.</p><p>После загрузки фото браузер загружает OCR Tesseract.js и модель формы MobileViT через Transformers.js с cdn.jsdelivr.net и huggingface.co (включая домены хранения Hugging Face). Изображение используется локально; запросы нужны для загрузки кода и весов модели. Модель может кэшироваться браузером. CDN видит технические данные запроса, включая IP, но приложение не отправляет туда фото или текст. Браузер может кэшировать библиотеку; кэш языковых моделей в приложении отключен. Хостинг сайта также видит обычные запросы страницы. Любой сторонний код — доверенная зависимость, абсолютной гарантии приватности нет.</p><p>Без интернета работают пример, профиль, сохраненные справочные адреса и скачивание готового отчета. Первое OCR требует интернета и может загружаться несколько минут. На слабом устройстве используйте фото меньшего размера или демопример. Лучше открывать через HTTPS на GitHub Pages: при открытии HTML двойным щелчком браузер может блокировать OCR.</p></details>
 </section>
-</main><footer><div class="wrap"><span>ГринСкан · внимательнее к этикетке</span><button class="linkbtn" id="showWelcome" type="button">Знакомство с ГринСкан</button><span>Бета 1.1 · Без рейтингов брендов и обещаний переработки</span></div></footer>
+</main><footer><div class="wrap"><span>GreenScan</span><a href="#privacy">Конфиденциальность</a><button id="showWelcome" type="button" hidden aria-hidden="true"></button></div></footer>
 <script>
 'use strict';
 // Самодостаточный анализ текста. Сеть используется исключительно для OCR-зависимостей.
@@ -65,8 +77,8 @@ const DEMO = 'Учебный продукт «Овсяное печенье» (�
 // Корни намеренно консервативны. Совпадение — упоминание, а не вывод о составе.
 const ALLERGENS = [
  ['Злаки / глютен','глютен[а-я]*|пшениц[а-я]*|пшенич[а-я]*|рожь|ржи|ржан[а-я]*|ячмен[а-я]*|овес|овса|овсян[а-я]*|полб[а-я]*|спельт[а-я]*|gluten|wheat|rye|barley|oats?|spelt'],
- ['Молоко','молок[а-я]*|молочн[а-я]*|сливк[а-я]*|сливочн[а-я]*|сыворот[а-я]*|казеин[а-я]*|лактоз[а-я]*|сыр|сыра|сыром|йогурт[а-я]*|кефир[а-я]*|milk|dairy|whey|casein(?:ate)?|lactose|cream|butter|cheese|yog[hu]urt'],
- ['Яйца','яйц[а-я]*|яичн[а-я]*|меланж|egg(?:s|white|whites|yolk|yolks)?|albumen'],
+ ['Молоко','молок[а-я]*|молочн[а-я]*|сливк[а-я]*|сливочн[а-я]*|сыворот[а-я]*|казеин[а-я]*|лактальбумин[а-я]*|лактоглобулин[а-я]*|сыр|сыра|сыром|йогурт[а-я]*|кефир[а-я]*|milk|dairy|whey|casein(?:ate)?|lactalbumin|lactoglobulin|cream|butter|cheese|yog[hu]urt'],
+ ['Яйца','яйц[а-я]*|яичн[а-я]*|меланж|овальбумин[а-я]*|овомукоид[а-я]*|egg(?:s|white|whites|yolk|yolks)?|albumen|ovalbumin|ovomucoid'],
  ['Арахис','арахис[а-я]*|peanuts?|groundnuts?'],
  ['Орехи','орех[а-я]*|миндал[а-я]*|фундук[а-я]*|кешью|фисташ[а-я]*|пекан[а-я]*|макадами[а-я]*|almonds?|hazelnuts?|walnuts?|cashews?|pistachios?|pecans?|macadamias?|brazil\\s+nuts?|tree\\s+nuts?'],
  ['Соя','соя|сои|сою|соев[а-я]*|soy(?:a|beans?)?'],
@@ -108,8 +120,8 @@ function analyzeText(raw) {
      for(const hit of clause.matchAll(wordRE(pattern))){
        const before=clause.slice(0,hit.index), after=clause.slice(hit.index+hit[0].length);
        const trace=/(?:может|могут)\s+(?:содержать|присутствовать)|следы|следов|may\s+(?:contain|be\s+present)|traces?\s+of|shared\s+(?:equipment|facility)/iu.test(before);
-       const negative=/(?:без|не\s+содержит|нет|free\s+from|no)\s+(?:[\p{L}-]+\s+){0,2}$/iu.test(before) || /^\s*[- ]free\b/iu.test(after);
-       const context=trace?'Возможные следы':negative?'Заявление об отсутствии':'Упоминание в тексте';
+       const negative=/(?:без|не\s+содержит|нет|free\s+from|does\s+not\s+contain|no)\s+(?:[\p{L}-]+\s+){0,2}$/iu.test(before) || /^\s*[- ]free\b/iu.test(after);
+       const context=negative?'Заявление об отсутствии':trace?'Возможные следы':'Упоминание в тексте';
        if(!evidence.some(e=>e.context===context)) evidence.push({context,quote:clause.slice(Math.max(0,hit.index-70),Math.min(clause.length,hit.index+hit[0].length+85))});
      }
    }
@@ -120,12 +132,31 @@ function analyzeText(raw) {
  for(const [code,name,pattern,number] of MATERIALS){
    // Не дублируем PAP внутри C/PAP, но сохраняем отдельное PAP на той же этикетке.
    const input=code.startsWith('PAP')&&composite?text.replace(wordRE('C\\s*[/／]\\s*PAP'),''):text;
-   const hits=[...input.matchAll(wordRE(pattern))];
+   const hits=[...input.matchAll(new RegExp('(?<![\\p{L}\\p{N}])(?:'+pattern+')(?![\\p{L}])','giu'))];
    if(!hits.length) continue;
    const hit=hits[0], before=input.slice(Math.max(0,hit.index-5),hit.index), after=input.slice(hit.index+hit[0].length,hit.index+hit[0].length+7);
    const adjacent=/^\s*[-:()]?\s*(\d{1,2})(?!\d)/.exec(after)||/(\d{1,2})\s*[-:()]?\s*$/.exec(before);
    const conflict=!!(adjacent&&!new RegExp('^(?:'+number+')$').test(adjacent[1]));
    materials.push({code,name,quote:input.slice(Math.max(0,hit.index-16),hit.index+hit[0].length+18),conflict});
+ }
+ // Обычные названия ищем только в явно подписанном фрагменте об упаковке,
+ // чтобы «соевое молоко» и названия ингредиентов не становились материалами.
+ const packText=/(?:упаковка|материал упаковки|packaging)\s*[:：-]\s*([^\n.!?]+)/iu.exec(raw)?.[1]||'';
+ const materialNames=[
+  ['Бумага / картон (без кода)','Бумага / картон','бумаг[а-я]*|бумажн[а-я]*|картон[а-я]*|paper|cardboard'],
+  ['Стекло (без кода)','Стекло','стекл[а-я]*|glass'],
+  ['Металл (без кода)','Металл; точный вид не указан','металл[а-я]*|metal'],
+  ['ALU · 41','Алюминий','алюмини[а-я]*|aluminium|aluminum'],
+  ['FE · 40','Сталь','сталь|стальн[а-я]*|steel'],
+  ['PET / PETE · 1','Полиэтилентерефталат','полиэтилентерефталат[а-я]*'],
+  ['PP · 5','Полипропилен','полипропилен[а-я]*|polypropylene'],
+  ['HDPE / PE-HD · 2','Полиэтилен высокой плотности','полиэтилен\\s+высокой\\s+плотности'],
+  ['LDPE / PE-LD · 4','Полиэтилен низкой плотности','полиэтилен\\s+низкой\\s+плотности']
+ ];
+ for(const [code,name,pattern] of materialNames){
+  const hit=wordRE(pattern).exec(normalize(packText));
+  const same=materials.some(m=>m.code===code||code.startsWith('Бумага')&&m.code.startsWith('PAP')||code.startsWith('Стекло')&&m.code.startsWith('GL')||code.startsWith('Металл')&&/^(?:FE|ALU)/.test(m.code));
+  if(hit&&!same)materials.push({code,name,quote:packText.trim(),conflict:false,fromName:true});
  }
  const ingredients=ingredientSection(raw);
  const criteria=[
@@ -142,42 +173,188 @@ function analyzeText(raw) {
  if(wordRE('подсластител[а-я]*|sweeteners?|сорбит[а-я]*|sorbitol|ксилит[а-я]*|xylitol').test(text)) warnings.push('Упомянут подсластитель. Наличие слова само по себе не определяет пользу или вред; проверьте пояснения изготовителя.');
  if(/не рекомендуется|противопоказан|not recommended|warning|предупреждение/iu.test(text)) warnings.push('В тексте есть слова специального предупреждения. Прочитайте его целиком на упаковке.');
  const additives=[...new Set([...text.matchAll(wordRE('[еe]\\s*\\d{3,4}[a-zа-я]?'))].map(m=>m[0].replace(/\s/g,'').replace(/^е/,'E').toUpperCase()))];
- return {allergens,materials,ingredients,criteria,score:criteria.reduce((s,c)=>s+(c.found?c.points:0),0),warnings,additives};
+ return {allergens,materials,ingredients,signals:ingredientSignals(raw),criteria,score:criteria.reduce((s,c)=>s+(c.found?c.points:0),0),warnings,additives};
+}
+function ingredientSignals(raw){
+ const text=normalize(raw);
+ const dictionary=[
+  ['Соевый лецитин','соев[а-я]*\\s+лецитин[а-я]*|soy(?:a)?\\s+lecithin|lecithin\\s*\\(\\s*soy(?:a)?\\s*\\)','Соя прямо указана в названии компонента. Контекст «следы» или «без» проверяйте в тексте этикетки.'],
+  ['Лецитин / E322','лецитин[а-я]*|lecithin|[еe]\\s*322','Без указания источника лецитина нельзя определить сою или яйца. Сам E322 не подтверждает аллерген.'],
+  ['Молочная сыворотка','сыворот[а-я]*|whey','Молочный компонент; количество лактозы по этому слову не определяется.'],
+  ['Альбумин','альбумин[а-я]*|albumin','Источник белка не определен по одному слову. Проверьте, указан ли яичный, молочный или другой источник.'],
+  ['Яичный белок / овальбумин','овальбумин[а-я]*|яичн[а-я]*\\s+бел[а-я]*|ovalbumin|albumen|egg\\s+whites?','Название, связанное с яйцом; найденное упоминание нужно сверить с контекстом этикетки.'],
+  ['Лактоза','лактоз[а-я]*|lactose|безлактозн[а-я]*','Проверьте контекст, включая «без лактозы». Непереносимость лактозы и аллергия на молочные белки — разные состояния. Количество не определяется.'],
+  ['Сульфиты','сульфит[а-я]*|диоксид\\s+серы|двуокись\\s+серы|sulfites?|sulphites?|sulfur\\s+dioxide|sulphur\\s+dioxide|[еe]\\s*22[0-8]','Найдено название или E-код; концентрация и индивидуальная переносимость не определяются.'],
+  ['Усилители вкуса','усилител[а-я]*\\s+вкус[а-я]*|flavou?r\\s+enhancers?|глутамат[а-я]*|monosodium\\s+glutamate|msg|[еe]\\s*(?:62[0-5]|627|631|635)','Категория добавок, а не автоматическое подтверждение аллергена или вреда. Проверьте точное название и состав.']
+ ];
+ const signals=[];
+ for(const [name,pattern,note] of dictionary){const hit=wordRE(pattern).exec(text);if(hit)signals.push({name,note,quote:text.slice(Math.max(0,hit.index-35),hit.index+hit[0].length+45)});}
+ if(signals.some(s=>s.name==='Соевый лецитин'))return signals.filter(s=>s.name!=='Лецитин / E322');
+ return signals;
 }
 const escapeHTML = s => String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-let imageCanvas=null, previewURL=null, previewRevision=0, rotation=0, busy=false, worker=null, runID=0, scriptPromise=null, demoMode=false, source='Ручной ввод', lastReport='', lastInput='';
+let imageCanvas=null, previewURL=null, previewRevision=0, rotation=0, busy=false, worker=null, runID=0, scriptPromise=null, demoMode=false, source='Фото', lastReport='', lastInput='';
 function setStatus(message,error=false){$('status').textContent=message;$('status').className='status'+(error?' error':'');$('status').hidden=!message;}
 function changed(){ $('count').textContent=$('text').value.length.toLocaleString('ru-RU')+' / 20 000';$('stale').hidden=$('results').hidden||$('text').value===lastInput; }
-function setBusy(value){busy=value;for(const id of ['choose','shoot','rotate','ocr','demo','analyse','text','clear','download']) $(id).disabled=value;$('progressBox').hidden=!value;}
+function setBusy(value){busy=value;for(const id of ['choose','shoot','rotate','ocr','demo','analyse','text','clear','download','packageKind','acceptedPackaging','editProfile','showWelcome']) $(id).disabled=value;$('progressBox').hidden=!value;}
+const PROFILE_KEY='greenscan.profile.v1';
+let profilePersistent=true, pendingProfileAction='none';
+function validateProfile(value){
+ if(!value||typeof value!=='object')return null;
+ const name=String(value.name||'').trim(),region=String(value.region||'').trim();
+ const age=value.age===null||value.age===''||value.age===undefined?null:Number(value.age);
+ if(!name||name.length>50||!region||region.length>100||age!==null&&(!Number.isInteger(age)||age<1||age>120))return null;
+ return {name,age,gender:['male','female'].includes(value.gender)?value.gender:'unspecified',region};
+}
+function loadProfile(){try{return validateProfile(JSON.parse(localStorage.getItem(PROFILE_KEY)));}catch{return null;}}
+let profile=loadProfile();
+function updateProfileSummary(){
+ $('profileSummary').textContent=profile?profile.name+' · '+profile.region+(profilePersistent?'':' · временный профиль'):'Выберите регион';
+}
+function openProfile(action='none'){
+ pendingProfileAction=action;
+ $('profileName').value=profile?profile.name:'';$('profileAge').value=profile&&profile.age!==null?profile.age:'';
+ $('profileGender').value=profile?profile.gender:'unspecified';$('profileRegion').value=profile?profile.region:'';
+ $('profileDelete').hidden=!profile;$('profileError').hidden=true;
+ if(!$('profileDialog').open)$('profileDialog').showModal();
+ $('profileName').focus();
+}
+function runProfileAction(action){
+ if(action==='photo')$('file').click();else if(action==='camera')$('camera').click();else if(action==='demo')$('demo').click();else $('choose').focus();
+}
+function startWithProfile(action){if(busy)return;if(profile)runProfileAction(action);else openProfile(action);}
+$('profileForm').addEventListener('submit',event=>{
+ event.preventDefault();
+ const value=validateProfile({name:$('profileName').value,age:$('profileAge').value,gender:$('profileGender').value,region:$('profileRegion').value});
+ if(!value){$('profileError').hidden=false;$('profileError').textContent='Укажите имя, регион и корректный возраст (от 1 до 120) или оставьте возраст пустым.';return;}
+ profile=value;profilePersistent=true;$('acceptedPackaging').checked=false;
+ try{localStorage.setItem(PROFILE_KEY,JSON.stringify(profile));}catch{profilePersistent=false;setStatus('Хранилище браузера недоступно. Профиль действует только до закрытия этой страницы.');}
+ updateProfileSummary();$('profileDialog').close();if(!$('results').hidden)render(lastInput);
+ runProfileAction(pendingProfileAction);
+});
+$('profileClose').onclick=()=>{$('profileDialog').close();runProfileAction(pendingProfileAction);};
+$('profileDialog').addEventListener('cancel',event=>{event.preventDefault();$('profileDialog').close();$('choose').focus();});
+$('profileDelete').onclick=()=>{
+ try{localStorage.removeItem(PROFILE_KEY);}catch{$('profileError').hidden=false;$('profileError').textContent='Браузер не разрешил удалить сохраненный профиль. Удалите данные сайта в настройках браузера.';return;}
+ profile=null;profilePersistent=true;$('acceptedPackaging').checked=false;pendingProfileAction='none';updateProfileSummary();$('profileDialog').close();if(!$('results').hidden)render(lastInput);else updateCollection();setStatus('Профиль удален с этого устройства.');$('editProfile').focus();
+};
+$('editProfile').onclick=()=>openProfile('none');
+updateProfileSummary();
+function isTomskRegion(region){return /(?<![\p{L}])томск(?:ая|ой|ую|ий|ом)?(?![\p{L}])/iu.test(normalize(region));}
+// Адрес не является подтверждением приема определенной фракции. Материалы не сопоставляются без актуальных правил оператора.
+const TOMSK_POINTS=[
+ {address:'Томск, ул. Набережная реки Томи, 19/1',status:'Адрес есть в справочнике. Часы работы и прием вашей упаковки уточните перед поездкой.',url:'https://recyclemap.ru/viewer/points/30737'},
+ {address:'Томск, пер. Лесной, 4',status:'Исторический адрес из публикации 2022 года. Действующий прием не подтвержден; не планируйте поездку без проверки.',url:'https://www.riatomsk.ru/article/20221119/tomskie-ekoaktivisti-rasschitivayut-sobratj-6-tonn-plastikovih-krishek/',historical:true}
+];
+function collectionHTML(){
+ const e=escapeHTML;
+ if(!profile)return '<section class="result-section result-location"><h3>Куда сдать</h3><p>Выберите регион в профиле.</p><a href="https://recyclemap.ru/" target="_blank" rel="noopener noreferrer">Карта пунктов приема</a></section>';
+ if(!isTomskRegion(profile.region))return '<section class="result-section result-location"><h3>Куда сдать</h3><p>Для региона «'+e(profile.region)+'» адреса пока не добавлены.</p><a href="https://yandex.ru/maps/?text='+encodeURIComponent('Пункты приема вторсырья '+profile.region)+'" target="_blank" rel="noopener noreferrer">Найти на карте</a></section>';
+ const card=p=>'<div class="collection-card"><h4>Экоцентр «Чистый мир»</h4><strong>'+e(p.address)+'</strong><br><a class="map-link" href="https://yandex.ru/maps/?text='+encodeURIComponent(p.address)+'" target="_blank" rel="noopener noreferrer">Открыть на карте</a><details><summary>Контакты и условия</summary><p>'+e(p.status)+'</p><a href="'+p.url+'" target="_blank" rel="noopener noreferrer">Источник</a>'+(!p.historical?'<a href="https://taplink.cc/clearworld_tomsk" target="_blank" rel="noopener noreferrer">Контакты</a>':'')+'</details></div>';
+ return '<section class="result-section result-location"><h3>Куда сдать · Томск</h3>'+card(TOMSK_POINTS[0])+'<details><summary>Исторический адрес — требует проверки</summary>'+card(TOMSK_POINTS[1])+'</details></section>';
+}
+function updateCollection(){$('collectionBody').innerHTML=collectionHTML();}
+let visualHint=null,visualState='idle',visionModelPromise=null;
+function shapeFromPredictions(predictions){
+ const top=predictions?.[0];
+ // Уверенность класса — не вероятность переработки. Слабые и посторонние классы игнорируем.
+ if(!top||!Number.isFinite(top.score)||top.score<0.55)return null;
+ const label=String(top.label||'').toLowerCase();
+ if(/\b(?:water bottle|pop bottle|beer bottle|wine bottle|bottle)\b/.test(label))return {kind:'bottle',name:'Бутылка'};
+ if(/\bcarton\b/.test(label))return {kind:'box',name:'Коробка'};
+ if(/\b(?:coffee mug|cup)\b/.test(label))return {kind:'vessel',name:'Чашка / стакан'};
+ if(/\b(?:tin can|soda can)\b/.test(label))return {kind:'can',name:'Банка'};
+ return null;
+}
+async function loadVisionModel(){
+ if(!visionModelPromise)visionModelPromise=(async()=>{
+  const {pipeline,env}=await import('https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1/dist/transformers.web.min.js');
+  env.allowLocalModels=false;env.backends.onnx.wasm.numThreads=1;
+  return pipeline('image-classification','Xenova/mobilevit-xx-small',{device:'wasm',dtype:'fp32'});
+ })().catch(err=>{visionModelPromise=null;throw err;});
+ return visionModelPromise;
+}
+async function recognizeShape(canvas,generation){
+ visualState='loading';visualHint=null;
+ let timer;
+ try{
+  const model=await Promise.race([loadVisionModel(),new Promise((_,reject)=>{timer=setTimeout(()=>reject(new Error('vision-timeout')),90000);})]);
+  clearTimeout(timer);if(generation!==photoID)return;
+  const predictions=await model(canvas.toDataURL('image/jpeg',0.85),{top_k:3});
+  if(generation!==photoID)return;
+  visualHint=shapeFromPredictions(predictions);visualState=visualHint?'done':'unknown';
+ }catch{if(generation===photoID){visualState='unavailable';visualHint=null;}}
+ finally{clearTimeout(timer);if(generation===photoID&&!$('results').hidden&&!demoMode)render($('text').value);}
+}
+
+function packagingAdvice(raw,r,selected='auto',accepted=false){
+ const text=normalize(raw),conflict=r.materials.some(m=>m.conflict);
+ const codes=r.materials.map(m=>m.fromName?m.name:m.code).join(', ');
+ const composite=r.materials.some(m=>m.code.startsWith('C/'));
+ let kind=selected, basis=selected==='auto'?'По словам и кодам этикетки':'Тип указан вами';
+ if(kind==='auto'){
+  if(composite||/tetra\s*pak|тетрапак|тетра\s*пак|milk\s+carton|juice\s+carton|многослойн[а-я]*\s+упаковк/.test(text))kind='carton';
+  else if(/бумажн[а-я]*\s+стакан|paper\s+cup|coffee\s+cup/.test(text))kind='cup';
+  else if(/бутыл[а-я]*|\bbottle\b/.test(text))kind='bottle';
+  else if(/пакет|пленк[а-я]*|\b(?:pouch|film|bag)\b/.test(text))kind='film';
+  else kind='unknown';
+ }
+ if(selected==='auto'&&kind==='unknown'&&!demoMode&&visualHint){kind=visualHint.kind;basis='По виду · предварительно';}
+ const names={box:'Коробка',vessel:'Чашка / стакан',can:'Банка',bottle:selected==='bottle'?'Пластиковая бутылка':'Бутылка',carton:'Коробка для напитка',cup:'Бумажный стаканчик',film:'Пакет / пленка',paper:'Бумага / картон',glass:'Стеклянная тара',metal:'Металлическая банка',other:'Тип не определен',unknown:'Тип не определен'};
+ const reasons=[];let verdict='Прием нужно уточнить';
+ if(conflict){verdict='Сначала проверьте маркировку';reasons.push('В тексте несовпадающие буквенное обозначение и номер материала.');}
+ else if(kind==='carton'||kind==='cup'){
+  verdict='Нужен отдельный прием';
+  reasons.push(kind==='carton'?'Многослойную упаковку принимают отдельным потоком при наличии подходящего оборудования.':'У бумажных стаканчиков могут быть покрытия: обычный прием бумаги не гарантирует их переработку.');
+ }else if(kind==='film')reasons.push('Прием зависит от полимера, покрытия и чистоты. Многослойные пакеты могут требовать отдельного сбора.');
+ else if(!codes)reasons.push('Код материала не распознан. Тип по внешнему виду не подтверждает состав упаковки.');
+ else reasons.push('Найдены обозначения '+codes+'. Проверка отдельных деталей, покрытий и загрязнения остается необходимой.');
+ if(selected!=='auto'&&codes)reasons.push('Обозначения на этикетке: '+codes+'. Уточненный тип не отменяет маркировку.');
+ let status=conflict||kind==='unknown'&&!codes?'Недостаточно данных':'Прием не подтвержден';
+ if(accepted){status='Принимают на переработку';verdict='Прием подтвержден вами';reasons.push('Вы указали, что выбранный пункт принимает именно эту упаковку.');}
+ else reasons.push('Уточните прием этой упаковки в своем пункте.');
+ return {kind,name:names[kind]||names.unknown,basis,verdict,reasons,status};
+}
+function ecoMentions(raw){
+ const text=normalize(raw),names=[];
+ if(wordRE('FSC').test(text))names.push('FSC');if(wordRE('PEFC').test(text))names.push('PEFC');
+ if(/листок\s+жизни/.test(text))names.push('Листок жизни');if(/eu\s+ecolabel/.test(text))names.push('EU Ecolabel');
+ return names;
+}
+$('packageKind').addEventListener('change',()=>{$('acceptedPackaging').checked=false;if(!$('results').hidden)render(lastInput);});
+$('acceptedPackaging').addEventListener('change',()=>{if(!$('results').hidden)render(lastInput);});
+
 function render(raw){
- const r=analyzeText(raw), e=escapeHTML;
+ const r=analyzeText(raw),e=escapeHTML,pack=packagingAdvice(raw,r,$('packageKind').value||'auto',!!$('acceptedPackaging').checked),eco=ecoMentions(raw);
  $('empty').hidden=true;$('results').hidden=false;$('demoBanner').hidden=!demoMode;$('stale').hidden=true;lastInput=raw;
- $('sourceNote').textContent='Источник: '+source+' · анализ текущего текста';
- let html='<section class="result-section"><div class="score-row"><div class="score">'+r.score+'<small>/ 100</small></div><div><div class="score-title">Полнота текста</div><p>Эвристика по 4 признакам.<br>Не рейтинг здоровья или экологичности.</p></div></div><details><summary>Почему '+r.score+' из 100?</summary><ul class="criteria">'+r.criteria.map(c=>'<li><span>'+(c.found?'✓ ':'— ')+e(c.label)+'</span><b>'+(c.found?c.points:0)+' / '+c.points+'</b></li>').join('')+'</ul><p>Наличие слов не подтверждает достоверность. Повторения не добавляют баллов. Правила одинаковы для любого бренда.</p></details></section>';
- const groupCount=r.allergens.length+' '+(r.allergens.length===1?'группа':r.allergens.length>=2&&r.allergens.length<=4?'группы':'групп');
- html+='<section class="result-section"><h3>Упоминания аллергенов <span class="tag">'+groupCount+'</span></h3><p>Словарный поиск RU + EN. Упоминание может относиться к составу, следам или заявлению «без».</p>';
- html+=r.allergens.length?r.allergens.map(a=>'<div class="finding"><strong>'+e(a.name)+'</strong>'+a.evidence.map(v=>'<div class="finding-top"><span class="tag amber">'+e(v.context)+'</span></div><blockquote>«'+e(v.quote)+'»</blockquote>').join('')+'</div>').join(''):'<div class="finding">Совпадений в словаре не найдено. Это не означает, что аллергенов нет: проверьте полный состав и предупреждения на упаковке.</div>';
- html+='</section><section class="result-section"><h3>Состав и важные фразы</h3>'+(r.ingredients?'<details open><summary>Раздел состава из текста</summary><div class="ingredients">'+e(r.ingredients)+'</div></details>':'<p>Не удалось выделить состав. Добавьте строку «Состав: …» или «Ingredients: …». Словарь при этом проверяет весь текст.</p>');
- if(r.additives.length) html+='<p>Найдены обозначения добавок: <strong>'+e(r.additives.join(', '))+'</strong>. Сам E-код не означает вредность. Функцию, дозировку и допустимость словарный поиск не проверяет.</p>';
- html+=r.warnings.length?r.warnings.map(w=>'<div class="finding small">'+e(w)+'</div>').join(''):'<p>Отдельных предупреждений из ограниченного словаря не найдено. Это не подтверждает отсутствие ограничений.</p>';
- html+='</section><section class="result-section"><h3>Материалы упаковки</h3><p>Найдены текстовые обозначения; значки без читаемых букв могут быть пропущены.</p>';
- html+=r.materials.length?r.materials.map(m=>'<div class="finding"><div class="finding-top"><strong>'+e(m.code)+'</strong><span class="tag">материал</span></div><p>'+e(m.name)+'</p><blockquote>«'+e(m.quote)+'»</blockquote>'+(m.conflict?'<p><strong>Рядом найден несовпадающий номер: проверьте маркировку вручную.</strong></p>':'')+'</div>').join(''):'<div class="finding">Обозначения из справочника не найдены. Впишите, например, PET 1 или PAP 21, только если они действительно есть на упаковке.</div>';
- html+='<p>Уточните прием конкретной упаковки в местном пункте сбора. Материал не гарантирует переработку: важны загрязнение, слои, покрытия и правила оператора. Разделяйте детали и очищайте их по его инструкции.</p></section><section class="result-section"><h3>А что с брендом?</h3><p>Не оценивается. Этикетка не подтверждает реальные практики переработки, сертификаты или добросовестность производителя.</p></section>';
- $('resultBody').innerHTML=html;
- lastReport=['ГРИНСКАН — разбор текста упаковки',demoMode?'ДЕМО: вымышленный продукт':'Источник: '+source,'ВАЖНО: поиск слов, не проверка безопасности. Сверьте с оригинальной упаковкой. Отсутствие совпадений не означает отсутствие аллергенов.','Полнота текста: '+r.score+'/100 (не оценка пользы, вреда, экологичности или бренда)',...r.criteria.map(c=>c.label+': '+(c.found?c.points:0)+'/'+c.points),'','УПОМИНАНИЯ АЛЛЕРГЕНОВ',...(r.allergens.length?r.allergens.flatMap(a=>a.evidence.map(v=>a.name+' — '+v.context+': «'+v.quote+'»')):['Не найдены в ограниченном словаре; отсутствие аллергенов не подтверждено.']),'','СОСТАВ',r.ingredients||'Не выделен','Добавки: '+(r.additives.join(', ')||'коды не найдены')+'; E-код сам по себе не означает вред.',...r.warnings,'','МАТЕРИАЛЫ',...(r.materials.length?r.materials.map(m=>m.code+' — '+m.name+'; «'+m.quote+'»'+(m.conflict?' — проверьте несовпадающий номер':'')):['Не распознаны.']),'Прием и реальную переработку уточните у местного оператора. Бренд и сертификация не оцениваются.','','ИСХОДНЫЙ ТЕКСТ',raw].join('\n');
+ $('sourceNote').textContent=demoMode?'Пример':'Разбор фото';
+ let html='<section class="result-section result-allergens"><h3>Аллергены</h3>';
+ html+=r.allergens.length?'<div class="allergen-list">'+r.allergens.map(a=>{
+  const onlyClaims=a.evidence.every(v=>v.context==='Заявление об отсутствии'),onlyTraces=a.evidence.every(v=>v.context==='Возможные следы');
+  return '<div class="allergen-chip'+(onlyClaims?' is-claim':onlyTraces?' is-trace':'')+'"><strong>'+e(a.name)+'</strong><small>'+e(a.evidence.map(v=>v.context==='Упоминание в тексте'?'Есть упоминание':v.context).join(' · '))+'</small></div>';
+ }).join('')+'</div>':(raw.trim()?'<p>Совпадений не найдено. Это не подтверждает отсутствие аллергенов.</p>':'<p>Текст состава не распознан.</p>');
+ const warnings=r.warnings.slice(0,3);
+ if(r.signals.length)html+='<p class="signal-names">Компоненты: '+e(r.signals.map(s=>s.name).join(', '))+'</p>';
+ if(r.allergens.length||r.signals.length||warnings.length)html+='<details><summary>Подробнее</summary>'+r.allergens.map(a=>'<p><strong>'+e(a.name)+':</strong> '+a.evidence.map(v=>'«'+e(v.quote)+'»').join('; ')+'</p>').join('')+r.signals.map(s=>'<p><strong>'+e(s.name)+'.</strong> '+e(s.note)+'</p>').join('')+warnings.map(w=>'<p>'+e(w)+'</p>').join('')+'</details>';
+ html+='</section><section class="result-section result-packaging"><h3>Упаковка</h3><p class="verdict">'+e(pack.name)+'</p><p>'+e(pack.basis)+'</p>'+(visualState==='loading'&&!demoMode?'<p>Определяем форму по фото…</p>':'')+'</section>';
+ html+='<section class="result-section result-materials"><h3>Материал</h3>'+(r.materials.length?r.materials.map(m=>'<div class="material-item"><strong>'+e(m.name)+'</strong><small>'+e(m.fromName?'По названию на этикетке':m.code)+(m.conflict?' · проверьте номер':'')+'</small></div>').join(''):'<p>Не определен — нужна читаемая маркировка.</p>')+'</section>';
+ html+='<section class="result-section result-recycling"><h3>Можно сдать?</h3><p class="verdict">'+e(pack.status)+'</p><p>'+e(pack.verdict)+'</p><details><summary>Условия</summary><ul>'+pack.reasons.map(reason=>'<li>'+e(reason)+'</li>').join('')+'</ul>'+(eco.length?'<p>Прочитаны названия: '+e(eco.join(', '))+'. Подлинность не проверена.</p>':'')+'</details></section>';
+ $('resultBody').innerHTML=html;updateCollection();
+ lastReport=['GREENSCAN — разбор',demoMode?'ПРИМЕР':'Источник: фото','Распознавание может ошибаться. Отсутствие совпадений не означает отсутствие аллергенов.','','АЛЛЕРГЕНЫ',...(r.allergens.length?r.allergens.map(a=>a.name+' — '+a.evidence.map(v=>v.context).join('; ')):['Совпадений не найдено; отсутствие аллергенов не подтверждено.']),...r.signals.map(s=>s.name+': '+s.note),'','УПАКОВКА',pack.name+' — '+pack.basis,'','МАТЕРИАЛЫ',...r.materials.map(m=>m.name+' — '+(m.fromName?'по названию на этикетке':m.code)),'','ПЕРЕРАБОТКА',pack.status,pack.verdict,...pack.reasons,...(profile&&isTomskRegion(profile.region)?['','АДРЕСА — УСЛОВИЯ ПРИЕМА НУЖНО УТОЧНИТЬ',...TOMSK_POINTS.map(p=>p.address+' — '+p.status+'\nКарта: https://yandex.ru/maps/?text='+encodeURIComponent(p.address))]:[])].join('\n');
  $('resultTitle').focus({preventScroll:true});if(matchMedia('(max-width:800px)').matches)$('resultTitle').scrollIntoView({behavior:'smooth',block:'start'});
 }
+
 function submit(){const raw=$('text').value.trim();if(raw.length<3||!/[\p{L}]{2}/u.test(raw)){setStatus('Добавьте хотя бы несколько слов с этикетки.',true);$('text').focus();return;}setStatus('');render(raw);}
 function markManual(){demoMode=false;source='Ручной ввод / исправленный текст';changed();}
 $('text').addEventListener('input',markManual);$('analyse').onclick=submit;
-$('demo').onclick=()=>{if(busy)return;demoMode=true;source='Вымышленный демонстрационный текст';$('text').value=DEMO;changed();setStatus('Пример заполнен: вы можете изменить текст и повторить анализ.');submit();};
-$('choose').onclick=()=>$('file').click();$('shoot').onclick=()=>$('camera').click();
+$('demo').onclick=()=>{if(busy)return;demoMode=true;source='Вымышленный демонстрационный текст';$('text').value=DEMO;changed();$('packageKind').value='auto';$('acceptedPackaging').checked=false;setStatus('');submit();};
+$('choose').onclick=()=>startWithProfile('photo');$('shoot').onclick=()=>startWithProfile('camera');
 function updatePreview(){const revision=++previewRevision;if(previewURL)URL.revokeObjectURL(previewURL);imageCanvas.toBlob(blob=>{if(!blob||revision!==previewRevision)return;previewURL=URL.createObjectURL(blob);$('preview').src=previewURL;},'image/jpeg',.9);}
 let photoID=0;
 async function loadPhoto(file){
  if(!file||busy)return;const id=++photoID;
  if(file.size>MAX_BYTES){setStatus('Фото больше 15 МБ. Уменьшите размер или сделайте новое фото.',true);return;}
- if(!/^(image\/(jpeg|png|webp))$/i.test(file.type)){setStatus('Этот формат не поддерживается. Выберите JPG, PNG или WebP. HEIC/HEIF сохраните как JPEG; можно вставить текст вручную.',true);return;}
+ if(!/^(image\/(jpeg|png|webp))$/i.test(file.type)){setStatus('Этот формат не поддерживается. Выберите JPG, PNG или WebP. HEIC/HEIF сохраните как JPEG; можно открыть демопример.',true);return;}
  const url=URL.createObjectURL(file),img=new Image();
  try{
   img.src=url;await img.decode();if(id!==photoID||busy)return;
@@ -186,15 +363,15 @@ async function loadPhoto(file){
   const canvas=document.createElement('canvas');canvas.width=Math.max(1,Math.round(img.naturalWidth*scale));canvas.height=Math.max(1,Math.round(img.naturalHeight*scale));
   const ctx=canvas.getContext('2d');if(!ctx)throw new Error('canvas');ctx.fillStyle='#fff';ctx.fillRect(0,0,canvas.width,canvas.height);ctx.drawImage(img,0,0,canvas.width,canvas.height);
   imageCanvas=canvas;rotation=0;updatePreview();$('previewWrap').hidden=false;$('photoName').textContent=file.name+' · '+canvas.width+' × '+canvas.height;
-  setStatus('Фото готово. Нажмите «Распознать RU + EN». Текущий текст будет заменен только после успешного распознавания.');
- }catch{setStatus('Не удалось открыть фото. Оно повреждено, слишком большое (свыше 45 мегапикселей) или не поддерживается браузером. Попробуйте другое фото либо ручной ввод.',true);}
+  $('packageKind').value='auto';$('acceptedPackaging').checked=false;$('results').hidden=true;$('empty').hidden=false;lastReport='';$('text').value='';changed();recognizeShape(canvas,id);await $('ocr').onclick();
+ }catch{setStatus('Не удалось открыть фото. Оно повреждено, слишком большое (свыше 45 мегапикселей) или не поддерживается браузером. Попробуйте другое фото либо демопример.',true);}
  finally{URL.revokeObjectURL(url);}
 }
 for(const id of ['file','camera']) $(id).addEventListener('change',ev=>{const f=ev.target.files[0];ev.target.value='';loadPhoto(f);});
 for(const event of ['dragover','dragleave','drop'])$('drop').addEventListener(event,ev=>{ev.preventDefault();$('drop').classList.toggle('drag',event==='dragover'&&!busy);if(event==='drop'&&!busy)loadPhoto(ev.dataTransfer.files[0]);});
 // Не допускаем перехода браузера на файл при случайном перетаскивании мимо зоны.
 window.addEventListener('dragover',ev=>ev.preventDefault());window.addEventListener('drop',ev=>ev.preventDefault());
-$('rotate').onclick=()=>{if(!imageCanvas||busy)return;const c=document.createElement('canvas');c.width=imageCanvas.height;c.height=imageCanvas.width;const ctx=c.getContext('2d');ctx.translate(c.width/2,c.height/2);ctx.rotate(Math.PI/2);ctx.drawImage(imageCanvas,-imageCanvas.width/2,-imageCanvas.height/2);imageCanvas=c;rotation=(rotation+90)%360;updatePreview();setStatus('Фото повернуто на '+rotation+'°. Запустите распознавание заново.');};
+$('rotate').onclick=()=>{if(!imageCanvas||busy)return;const c=document.createElement('canvas');c.width=imageCanvas.height;c.height=imageCanvas.width;const ctx=c.getContext('2d');ctx.translate(c.width/2,c.height/2);ctx.rotate(Math.PI/2);ctx.drawImage(imageCanvas,-imageCanvas.width/2,-imageCanvas.height/2);imageCanvas=c;$('acceptedPackaging').checked=false;++photoID;visualHint=null;visualState='idle';recognizeShape(c,photoID);rotation=(rotation+90)%360;updatePreview();setStatus('Фото повернуто на '+rotation+'°. Повторите распознавание.');$('results').hidden=true;$('empty').hidden=false;lastReport='';};
 function loadTesseract(){
  if(window.Tesseract)return Promise.resolve(window.Tesseract);
  if(scriptPromise)return scriptPromise;
@@ -207,7 +384,7 @@ $('cancel').onclick=()=>cancelOCR();
 $('ocr').onclick=async()=>{
  if(!imageCanvas||busy)return;const id=++runID;setBusy(true);setStatus('');$('progress').value=0;$('progressText').textContent='Загрузка OCR: первый запуск может занять несколько минут…';
  let localWorker=null,failed=false;
- const timer=setTimeout(()=>{if(id===runID)cancelOCR('Распознавание заняло более 3 минут. Попробуйте еще раз, уменьшите фото или введите текст вручную.');},180000);
+ const timer=setTimeout(()=>{if(id===runID)cancelOCR('Распознавание заняло более 3 минут. Попробуйте еще раз, уменьшите фото или попробуйте демопример.');},180000);
  const active=()=>id===runID;
  try{
   const T=await loadTesseract();if(!active())return;
@@ -227,13 +404,17 @@ $('ocr').onclick=async()=>{
   })();
   const result=await Promise.race([job,workerError]);if(!active()||!result)return;
   const data=result.data;
-  if(!data.text||data.text.trim().length<3){setStatus('Читаемый текст не найден. Снимите состав ближе, без бликов, поверните фото или вставьте текст вручную. Старый текст сохранен.',true);return;}
+  if(!data.text||data.text.trim().length<3){$('text').value='';demoMode=false;source='Фото без читаемого текста';setStatus('Текст не читается. Для состава нужно фото этикетки.',true);render('');return;}
   $('text').value=data.text.slice(0,MAX_TEXT);demoMode=false;source='OCR фото, текст требует проверки';changed();
-  setStatus('Текст распознан'+(Number.isFinite(data.confidence)?' · техническая уверенность OCR '+Math.round(data.confidence)+'%':'')+'. Это не вероятность правильности состава. Исправьте текст и нажмите «Разобрать этикетку».'+(data.text.length>MAX_TEXT?' Текст обрезан до 20 000 символов.':''));$('text').focus();
- }catch{failed=true;if(active())setStatus('Не удалось загрузить или запустить OCR. Проверьте интернет, разрешение загрузок с CDN и попробуйте современный браузер через HTTPS. Можно продолжить вручную или открыть пример. Текст сохранен.',true);}
+  source='Автоматический разбор фото';
+  const confidence=Number.isFinite(data.confidence)?Math.round(data.confidence):null;
+  setStatus(confidence!==null&&confidence<65?'Текст нечеткий — лучше переснять фото.':'Разбор готов.');
+  render($('text').value);
+
+ }catch{failed=true;if(active()){setStatus('Текст не распознан. Попробуйте другое фото.',true);render('');}}
  finally{clearTimeout(timer);safeTerminate(localWorker);if(active()){worker=null;setBusy(false);}}
 };
-$('clear').onclick=()=>{if(busy)return;++photoID;++runID;++previewRevision;imageCanvas=null;rotation=0;if(previewURL)URL.revokeObjectURL(previewURL);previewURL=null;$('preview').removeAttribute('src');$('previewWrap').hidden=true;$('photoName').textContent='';$('text').value='';$('resultBody').replaceChildren();$('results').hidden=true;$('empty').hidden=false;demoMode=false;source='Ручной ввод';lastReport='';lastInput='';setStatus('Фото, текст и результат очищены.');changed();$('text').focus();};
+$('clear').onclick=()=>{if(busy)return;++photoID;++runID;++previewRevision;imageCanvas=null;visualHint=null;visualState='idle';rotation=0;if(previewURL)URL.revokeObjectURL(previewURL);previewURL=null;$('preview').removeAttribute('src');$('previewWrap').hidden=true;$('photoName').textContent='';$('text').value='';$('resultBody').replaceChildren();$('results').hidden=true;$('empty').hidden=false;demoMode=false;source='Ручной ввод';lastReport='';lastInput='';setStatus('Фото, текст и результат очищены.');changed();$('choose').focus();$('collectionBody').replaceChildren();$('packageKind').value='auto';$('acceptedPackaging').checked=false;};
 $('download').onclick=()=>{if(!lastReport)return;const blob=new Blob(['\uFEFF'+lastReport+($('text').value!==lastInput?'\n\nВНИМАНИЕ: текст в редакторе изменен после этого анализа.':'')],{type:'text/plain;charset=utf-8'}),url=URL.createObjectURL(blob),a=document.createElement('a');a.href=url;a.download='greenscan-report.txt';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);};
 window.addEventListener('pagehide',()=>{safeTerminate(worker);if(previewURL)URL.revokeObjectURL(previewURL);});
 // Сохраняется только факт знакомства. Фото и текст не сохраняются.
@@ -242,9 +423,9 @@ let welcomeStep=0;
 function showWelcomeStep(step){
  welcomeStep=step;
  const titles=['Добро пожаловать в ГринСкан!','Что умеет ГринСкан','Теперь добавьте фото'];
- const descriptions=['Поможем внимательнее прочитать состав продукта и разобраться в маркировке упаковки. Начнем с короткого знакомства?','Находим подсказки в тексте этикетки и показываем, на какие слова обратить внимание.','Сфотографируйте состав и маркировку крупным планом, ровно и без бликов. Затем запустите распознавание, исправьте текст и получите разбор.'];
+ const descriptions=['Сфотографируйте упаковку — мы разберемся в надписях.','Три простых результата по вашему фото.','Загрузите четкое фото состава и маркировки.'];
  $('welcomeTitle').textContent=titles[step];$('welcomeDescription').textContent=descriptions[step];
- $('welcomeIcon').textContent=['❧','⌕','▧'][step];
+ $('welcomeIcon').textContent=['','',''][step];
  $('welcomeFeatures').hidden=step!==1;$('welcomeCaution').hidden=step===0;
  $('welcomeCamera').hidden=step!==2;$('welcomeManual').hidden=step!==2;$('welcomeBack').hidden=step===0;
  $('welcomeNext').textContent=['Что умеет ГринСкан →','Понятно, начнем →','Выбрать фото'][step];
@@ -263,15 +444,15 @@ function finishWelcome(target='choose'){
  if(typeof $('welcome').close==='function')$('welcome').close();else $('welcome').removeAttribute('open');
  $(target).focus();
 }
-$('welcomeNext').onclick=()=>{if(welcomeStep<2)showWelcomeStep(welcomeStep+1);else{finishWelcome();$('file').click();}};
+$('welcomeNext').onclick=()=>{if(welcomeStep<2)showWelcomeStep(welcomeStep+1);else{finishWelcome();startWithProfile('photo');}};
 $('welcomeBack').onclick=()=>showWelcomeStep(Math.max(0,welcomeStep-1));
-$('welcomeSkip').onclick=()=>finishWelcome();
-$('welcomeCamera').onclick=()=>{finishWelcome('shoot');$('camera').click();};
-$('welcomeManual').onclick=()=>finishWelcome('text');
-$('welcome').addEventListener('cancel',event=>{event.preventDefault();finishWelcome();});
+$('welcomeSkip').onclick=()=>{finishWelcome();startWithProfile('none');};
+$('welcomeCamera').onclick=()=>{finishWelcome('shoot');startWithProfile('camera');};
+$('welcomeManual').onclick=()=>{finishWelcome();startWithProfile('demo');};
+$('welcome').addEventListener('cancel',event=>{event.preventDefault();finishWelcome();startWithProfile('none');});
 $('showWelcome').onclick=openWelcome;
 let welcomeSeen=false;try{welcomeSeen=localStorage.getItem(WELCOME_KEY)==='done';}catch{}
-if(!welcomeSeen)openWelcome();
+if(!welcomeSeen)openWelcome();else if(!profile)openProfile('none');
 </script>
 </body>
 </html>
